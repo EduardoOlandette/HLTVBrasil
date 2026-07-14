@@ -1,0 +1,380 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    width: 100%;
+    height: 80px; 
+    background: linear-gradient(to bottom, #0b132b, #1c2541);
+    border-bottom: 1px solid #1e293b;
+    display: flex;
+    align-items: center;
+    padding: 0 40px; 
+}
+
+#navbar {
+    width: 100%;
+    max-width: 1400px; 
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+}
+
+#nav_logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+    color: white;
+    font-size: 32px;
+    font-weight: 800;
+}
+
+#nav_logo i {
+    font-size: 28px;
+}
+#nav_logo img {
+    max-height: 50px;
+    width: auto;
+    display: block;
+}
+
+
+
+#nav_list {
+    list-style: none;
+    display: flex;
+    gap: 35px;
+    align-items: center;
+}
+
+#nav_list a {
+    color: #94a3b8;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 16px;
+    font-family: sans-serif;
+    padding: 8px 0;
+    transition: all 0.2s ease;
+    display: inline-block;
+}
+
+#nav_list a:hover {
+    color: white;
+    transform: translateY(-2px);
+}
+
+.active {
+    color: #60a5fa !important;
+    border-bottom: 2px solid #60a5fa;
+}
+
+.search {
+    display: flex;
+    align-items: center;
+}
+
+.pesquisa {
+    display: flex;
+    align-items: center;
+    background-color: #1e293b; /* Tom combinando com o fundo do navbar */
+    border: 1px solid #334155;
+    border-radius: 20px;
+    padding: 8px 16px;
+    width: 250px;
+    transition: all 0.3s ease;
+}
+
+.pesquisa:focus-within {
+    background-color: #0f172a;
+    border-color: #60a5fa;
+    box-shadow: 0 0 0 3px rgba(96, 165, 250, 0.2);
+}
+
+.pesquisa input {
+    border: none;
+    background: none;
+    outline: none;
+    width: 100%;
+    font-size: 14px;
+    color: white;
+}
+
+.pesquisa input::placeholder {
+    color: #64748b;
+}
+
+.pesquisa button {
+    border: none;
+    background: none;
+    cursor: pointer;
+    display: flex;
+    color: #64748b;
+    transition: color 0.2s;
+}
+
+.pesquisa button:hover {
+    color: #60a5fa;
+}
+
+/* ÍCONE DE CONTA */
+#user_acc {
+    font-size: 28px;
+    color: white;
+    cursor: pointer;
+    transition: color 0.2s;
+    display: flex;
+    align-items: center;
+}
+
+#user_acc:hover {
+    color: #60a5fa;
+}
+
+
+
+main{
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+    justify-content: center;
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    padding: 20px;
+}
+
+.card {
+    min-height: 300px;
+    background-color: #292929;
+    border: 1px solid #383838;
+    border-radius: 8px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+.card-header {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+
+    width: calc(100% + 30px);
+    margin: -15px -15px 15px;
+    padding: 15px;
+
+    background-color: #1e293b;
+    border-radius: 8px 8px 0 0;
+}
+
+
+
+.card h3,
+.card h4 {
+    display: block;
+    width: calc(100% + 30px);
+
+    color: #f1f5f9;
+    background-color: #1e293b;
+    font-family: sans-serif;
+    font-size: 15px;
+    text-transform: uppercase;
+
+    padding: 15px;
+    margin: -15px -15px 15px;
+
+    border-radius: 8px 8px 0 0;
+}
+
+.card-header h3 {
+    width: auto;
+    margin: 0 0 5px;
+    padding: 0;
+
+    background: none;
+    border-radius: 0;
+
+    color: #f1f5f9;
+    font-size: 17px;
+    text-transform: none;
+}
+
+.card-titulos {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.botao-card {
+    background-color: #2563eb;
+    color: white;
+    padding: 6px 12px;
+    border-radius: 6px;
+    font-size: 12px;
+    text-decoration: none;
+    display: flex;
+    transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+.botao-card:hover {
+    transform: translateY(-2px);
+    background-color: #60a5fa;
+}
+
+.card h2{
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 32px;
+}
+
+.card-header p {
+    color: #94a3b8;
+    font-size: 12px;
+}
+
+.lista-jogadores {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.jogador {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    padding: 12px;
+    background-color: #1e293b;
+    border-radius: 6px;
+
+    color: white;
+    font-family: sans-serif;
+    transition: transform 0.2s ease, background-color 0.2s ease;
+    cursor: pointer;
+}
+
+.jogador:hover {
+    transform: translateX(5px);
+    background-color: #263653;
+}
+
+.pontuacao {
+    margin-left: auto;
+    color: #cbd5e1;
+    font-size: 12px;
+}
+
+.posicao {
+    width: 30px;
+    height: 30px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: #1d54d4;
+    border-radius: 5px;
+
+    color: white;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.primeiro-lugar {
+    border: 2px solid #c7d52d;
+    background-color: rgb(71, 71, 3);
+}
+
+.primeiro-lugar .posicao {
+    background-color: #faf60b;
+    color: #0f172a;
+}
+
+.ver-jogadores {
+    margin: 15px -15px -15px;
+    padding: 15px;
+
+    background-color: #1e293b;
+    color: #f1f5f9;
+
+    text-align: center;
+    text-decoration: none;
+    font-family: sans-serif;
+    font-size: 15px;
+
+    border-radius: 0 0 8px 8px;
+    transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+.ver-jogadores:hover {
+    transform: translateY(5px);
+}
+
+#esquerda, 
+#direita {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    gap: 20px;
+}
+
+
+#centro {
+    flex: 2;
+    background: #3a3a3a;
+    min-height: 940px;
+    padding: 10px;
+
+}
+
+.player_da_semana{
+
+}
+
+
+.ranking_brasil{
+    
+}
+
+
+.proximos_camps{
+
+}
+
+.pugzeiro_semanal{
+    
+}
+
+.ranking_gc{
+    
+}
+
+.ranking_fc{
+    
+}
+
+.noticias, .imagem_principal{
+    display: flex;
+    align-items: center;
+    width: auto;
+    height: 200px;
+    margin-top: 100px;
+    color: rgb(17, 17, 17);
+}
+
+.ultimas_noticias, .imagem_principal{
+    width: 600px;
+    height: 300px;
+    padding: 15px;
+    background: #3a3a3a
+}

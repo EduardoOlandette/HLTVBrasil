@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" type="image/png" href="src/logo.png">
+    <link rel="stylesheet" href="src/styles/header.css">
+    <link rel="stylesheet" href="src/styles/style.css">
+</head>
+<body>
+    <header>
+        <nav id="navbar">
+            <i class="fa-solid fa-bullseye" id="nav_logo">HBR</i>
+            <ul id="nav_list">
+                <li class="nav-item">
+                    <a href="home1"> Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a href="partidas"> Partidas</a>
+                </li>
+                <li class="nav-item">
+                    <a href="resultados"> Resultados</a>
+                </li>
+                <li class="nav-item">
+                    <a href="campeonatos"> Campeonatos</a>
+                </li>
+                <li class="nav-item">
+                    <a href="rankings"> Rankings</a>
+                </li>
+                <li class="nav-item">
+                    <a href="Scout">Scout</a>
+                </li>
+
+                <form class="pesquisa" action="/ame" method="get">
+                    <button type="button" aria-label="Pesquisar">
+                        <input type="text" name="q" placeholder="Pesquisar" required>
+                    </button>
+                </form>
+
+                <i id="user_acc" class="fa-solid fa-user-ninja"></i>
+            </ul>
+        </nav>
+    </header>
+<main>
+
+    <!-- Coluna da esquerda -->
+    <section id="esquerda">
+<div class="card player_da_semana">
+    <div class="card-header">
+        <div class="card-titulos">
+        <h3>PLAYER DA SEMANA</h3>
+            <P>Melhores jogadores da semana</P>
+        </div>
+        <a href="top5" class="botao-card">TOP 10</a>
+    </div>
+
+    <div class="lista-jogadores">
+
+        <div class="jogador primeiro-lugar">
+            <span class="posicao">1</span>
+            <strong>Player 1</strong>
+            <span class="pontuacao">1.45</span>
+        </div>
+
+        <div class="jogador">
+            <span class="posicao">2</span>
+            <strong>Player 2</strong>
+            <span class="pontuacao">1.38</span>
+        </div>
+
+        <div class="jogador">
+            <span class="posicao">3</span>
+            <strong>Player 3</strong>
+            <span class="pontuacao">1.32</span>
+        </div>
+
+        <div class="jogador">
+            <span class="posicao">4</span>
+            <strong>Player 4</strong>
+            <span class="pontuacao">1.29</span>
+        </div>
+
+        <div class="jogador">
+            <span class="posicao">5</span>
+            <strong>Player 5</strong>
+            <span class="pontuacao">1.25</span>
+        </div>
+
+    </div>
+    <a href="ver-jogadores" class="ver-jogadores">Ver jogadores da semana</a>
+
+</div>
+
+</div>
+
+        <div class="card ranking_brasil">
+            <h4>RANKING DE TIMES DO BRASIL</h4>
+        </div>
+
+        <div class="card proximos_camps">
+            <h4>PRÓXIMOS CAMPEONATOS</h4>
+        </div>
+    </section>
+
+    <!-- Noticia central -->
+    <section id="centro">
+        <div class="card ultimas_noticias">
+            <h2>Últimas notícias</h2>
+        </div>
+    </section>
+
+    <!-- Coluna da direita -->
+    <section id="direita">
+        <div class="card pugzeiro_semanal">
+                <div class="card-header">
+        <div class="card-titulos">
+        <h3>PUGZEIRO SEMANAL</h3>
+            <P>Melhores PUGZEIROS</P>
+        </div>
+        <a href="top5" class="botao-card">TOP 10</a>
+    </div>
+
+    <div class="lista-jogadores">
+
+        <div class="jogador primeiro-lugar">
+            <span class="posicao">1</span>
+            <strong>Player 1</strong>
+            <span class="pontuacao"> KDR 1.45</span>
+            <span class="pontuacao">45 Pugs</span>
+        </div>
+
+        <div class="jogador">
+            <span class="posicao">2</span>
+            <strong>Player 2</strong>
+            <span class="pontuacao">1.38</span>
+            <span class="pontuacao">49 Pugs</span>
+        </div>
+
+        <div class="jogador">
+            <span class="posicao">3</span>
+            <strong>Player 3</strong>
+            <span class="pontuacao">1.32</span>
+            <span class="pontuacao">51 Pugs</span>
+        </div>
+
+        <div class="jogador">
+            <span class="posicao">4</span>
+            <strong>Player 4</strong>
+            <span class="pontuacao">1.29</span>
+            <span class="pontuacao">54 Pugs</span>
+        </div>
+
+        <div class="jogador">
+            <span class="posicao">5</span>
+            <strong>Player 5</strong>
+            <span class="pontuacao">1.25</span>
+            <span class="pontuacao">58 Pugs</span>
+        </div>
+
+    </div>
+    <a href="ver-jogadores" class="ver-jogadores">Ver jogadores da semana</a>
+
+</div>
+        </div>
+
+        <div class="card ranking_gc">
+            <h4>Ranking GC</h4>
+        </div>
+
+        <div class="card ranking_fc">
+            <h4>Ranking Faceit</h4>
+        </div>
+    </section>
+</main>
+</body>
+</html>
